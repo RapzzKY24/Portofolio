@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       >
         <Nav />
         <NavMobile />
-        {children}
+        <main className="pt-[12vh]">{children}</main>
       </body>
     </html>
   );

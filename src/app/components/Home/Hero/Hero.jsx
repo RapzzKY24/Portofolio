@@ -6,8 +6,12 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section id="home">
+    <section
+      id="home"
+      className="relative w-full min-h-[calc(100vh-12vh)] flex items-center"
+    >
       <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
+        {/* LEFT */}
         <div className="space-y-6">
           <p className="text-xs sm:text-sm tracking-widest uppercase text-indigo-300/80">
             Hi, I’m
@@ -23,9 +27,9 @@ const Hero = () => {
               ease="power3.out"
               stagger={0.03}
               threshold={0.1}
-              triggerOnce={true}
+              triggerOnce
               triggerOnHover={false}
-              respectReducedMotion={true}
+              respectReducedMotion
             />
           </h1>
 
@@ -53,9 +57,10 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2">
-            <Link
-              href="paymeriskiaulia@gmail.com"
-              aria-label="Contact Me via email"
+            <a
+              href="/cv.pdf"
+              download
+              aria-label="Download my CV"
               className="group relative inline-flex items-center justify-center px-5 py-3 rounded-md font-semibold text-white
                          bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500
                          shadow-lg shadow-indigo-600/30 ring-1 ring-white/10
@@ -63,11 +68,9 @@ const Hero = () => {
                          focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/70"
             >
               <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-md">
-                <span
-                  className="absolute -left-1/3 top-0 h-full w-1/3 rotate-12 bg-white/15
-                                   translate-x-[-120%] group-hover:translate-x-[220%] transition-transform duration-700 ease-out"
-                />
+                <span className="absolute -left-1/3 top-0 h-full w-1/3 rotate-12 bg-white/15 translate-x-[-120%] group-hover:translate-x-[220%] transition-transform duration-700 ease-out" />
               </span>
+              {/* download icon */}
               <svg
                 className="h-5 w-5 mr-2"
                 viewBox="0 0 24 24"
@@ -76,14 +79,14 @@ const Hero = () => {
                 strokeWidth="2"
                 aria-hidden="true"
               >
-                <path d="m22 2-7 20-4-9-9-4Z" />
-                <path d="M22 2 11 13" />
+                <path d="M12 3v12m0 0-4-4m4 4 4-4" />
+                <path d="M5 21h14" />
               </svg>
               Download CV
-            </Link>
+            </a>
 
             <Link
-              href={"/project"}
+              href="/project"
               className="inline-flex items-center justify-center px-5 py-3 rounded-md font-semibold
                          text-indigo-200 ring-1 ring-white/10 hover:bg-white/5 transition focus:outline-none
                          focus-visible:ring-2 focus-visible:ring-sky-300/70"
@@ -94,7 +97,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="hidden xl:block self-start mt-6 xl:mt-8">
+        <div className="hidden xl:block self-center">
           <ProfileGlassCard
             name="Payme Risky"
             photo="/heroPhotos.jpeg"
