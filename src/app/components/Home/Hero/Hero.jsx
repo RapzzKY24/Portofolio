@@ -8,11 +8,11 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative w-full min-h-[calc(100vh-12vh)] flex items-center"
+      className="relative w-full min-h-[calc(100vh-12vh)] flex items-center justify-center py-12 md:py-16"
     >
-      <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
-        {/* LEFT */}
-        <div className="space-y-6">
+      <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-16 items-center">
+        {/* LEFT CONTENT */}
+        <div className="space-y-6 md:space-y-8">
           <p className="text-xs sm:text-sm tracking-widest uppercase text-indigo-300/80">
             Hi, I’m
           </p>
@@ -62,7 +62,7 @@ const Hero = () => {
               download
               aria-label="Download my CV"
               className="group relative inline-flex items-center justify-center px-5 py-3 rounded-md font-semibold text-white
-                         bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500
+                         bg-linear-to-br from-indigo-600 via-indigo-500 to-sky-500
                          shadow-lg shadow-indigo-600/30 ring-1 ring-white/10
                          transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]
                          focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/70"
@@ -98,6 +98,7 @@ const Hero = () => {
         </div>
 
         <div className="hidden xl:block self-center">
+          {/* RIGHT CONTENT */}
           <ProfileGlassCard
             name="Payme Risky"
             photo="/heroPhotos.jpeg"

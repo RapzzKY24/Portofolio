@@ -1,21 +1,23 @@
-export const intro =
-  "I’m an undergraduate Information Technology student at Telkom University Jakarta with a strong interest in web development and technology-driven problem solving. I have a solid grasp of programming fundamentals and actively sharpen my skills in JavaScript, Laravel, and database management. As a responsible and disciplined learner with high curiosity, I strive to deliver efficient, innovative solutions that add real value in every project I work on.";
+export const skills = [
+  "Front-End Developer",
+  "Full-Stack JavaScript",
+  "UI/UX Design",
+  "Product Design",
+  "Graphic Design",
+  "Mobile Developer",
+  "Software Engineer",
+];
 
-export const chips = [
-  "Backend Developer",
-  "Laravel",
-  "Node/Express",
-  "PostgreSQL",
-  "Docker",
-  "REST API",
-  "Clean Architecture",
+export const stats = [
+  { k: "Projects", v: "2+" },
+  { k: "APIs shipped", v: "5+" },
+  { k: "Dockerized", v: "Yes" },
 ];
 
 export const experience = [
-  { role: "Akademik Division", org: "HMIT", time: "2024 – Present" },
-];
-
-export const socials = [
-  { type: "github", href: "https://github.com/RapzzKY24", label: "GitHub" },
-  { type: "youtube", href: "https://youtube.com", label: "YouTube" },
+  {
+    role: "Staff Division Akademik",
+    org: "Himpunan Mahasiswa Teknologi Informasi",
+    time: "2025 – Now",
+  },
 ];

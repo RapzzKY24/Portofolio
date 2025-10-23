@@ -3,7 +3,7 @@ const navLinks = [
   { id: 2, url: "/#about", label: "About " },
   { id: 3, url: "/#sertification", label: "Sertification" },
   { id: 4, url: "/#project", label: "Project" },
-  { id: 5, url: "/#scontact", label: "Contact" },
+  { id: 5, url: "/#contact", label: "Contact" },
 ];
 
 export default navLinks;
