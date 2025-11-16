@@ -1,10 +1,6 @@
 export const skills = [
   "Front-End Developer",
   "Full-Stack JavaScript",
-  "UI/UX Design",
-  "Product Design",
-  "Graphic Design",
-  "Mobile Developer",
   "Software Engineer",
 ];
 
@@ -18,6 +14,16 @@ export const experience = [
   {
     role: "Staff Division Akademik",
     org: "Himpunan Mahasiswa Teknologi Informasi",
+    time: "2025 – Now",
+  },
+  {
+    role: "Core Team Event",
+    org: "Google Developer Groups On Campus",
+    time: "2025 – Now",
+  },
+  {
+    role: "Member Of Reserarch And Development",
+    org: "Artificial Intelegence for Learning and Optimization",
     time: "2025 – Now",
   },
 ];

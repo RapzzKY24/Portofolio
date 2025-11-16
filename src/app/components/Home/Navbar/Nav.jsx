@@ -53,11 +53,9 @@ const Nav = () => {
           <Link
             href="mailto:payme@example.com"
             aria-label="Contact Me"
-            className="group relative inline-flex items-center justify-center px-6 py-3 rounded-md font-semibold text-white
-               bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500
-               shadow-lg shadow-indigo-600/30 ring-1 ring-white/10
-               transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]
-               focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/70"
+            className={
+              "group relative inline-flex items-center justify-center px-6 py-3 rounded-md font-semibold text-white bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 shadow-lg shadow-indigo-600/30 ring-1 ring-white/10 transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-300/70"
+            }
           >
             <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-md">
               <span className="absolute -left-1/3 top-0 h-full w-1/3 rotate-12 bg-white/15 translate-x-[-120%] group-hover:translate-x-[220%] transition-transform duration-700 ease-out" />
